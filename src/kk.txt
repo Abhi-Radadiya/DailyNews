@@ -1,0 +1,18 @@
+<Router><Switch><Route path="/science"><News country="us" category="science" /></Route></Switch></Router>
+
+<Router><Switch><Route path="/business"><News country="us" category="bussiness" /></Route></Switch></Router>
+<Router><Switch><Route path="/entertainment"><News country="us" category="entertainment"/></Route></Switch></Router>
+<Router><Switch><Route path="/general"><News country="us" category="general"/></Route></Switch></Router>
+<Router><Switch><Route path="/health"><News country="us" category="health" /></Route></Switch></Router>
+<Router><Switch><Route path="/science"><News country="us" category="science" /></Route></Switch></Router>
+<Router><Switch><Route path="/sports"><News country="us" category="sports" /></Route></Switch></Router>
+<Router><Switch><Route path="/technology"><News country="us" category="technology" /></Route></Switch></Router>
+
+
+
+entertainment
+general
+health
+science
+sports
+technology
