@@ -23,7 +23,7 @@ export class News extends Component {
 
   updateIt = async () => {
     this.setState({ loading: true, page: this.state.page + 1 });
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apikey=dbe57b028aeb41e285a226a94865f7a7&page=${this.state.page}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apikey=c8931bfc413d4cfa859e8d0ef83793dc&page=${this.state.page}`;
     let data = await fetch(url);
     let parsedData = await data.json();
 
@@ -43,14 +43,13 @@ export class News extends Component {
   fetchMoreData = async () => {
     this.setState({ page: this.state.page + 1 });
 
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apikey=dbe57b028aeb41e285a226a94865f7a7&page=${this.state.page}`;
+    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apikey=c8931bfc413d4cfa859e8d0ef83793dc&page=${this.state.page}`;
     let data = await fetch(url);
     let parsedData = await data.json();
     this.setState({
       articles: this.state.articles.concat(parsedData.articles),
       totalResults: parsedData.totalResults,
     });
-    console.log("pages display---->", this.state.page);
   };
 
   render() {

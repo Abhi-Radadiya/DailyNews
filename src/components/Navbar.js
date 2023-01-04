@@ -19,11 +19,12 @@ export class Navbar extends Component {
             aria-label="Toggle navigation"
           >
           </button>
+
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
             <li className="nav-item active"><Link className="nav-link" to="/">General</Link></li>
-            <li className="nav-item active"><Link className="nav-link" to="/science">Science</Link></li>
             <li className="nav-item active"><Link className="nav-link" to="/technology">Technology</Link></li>
+            <li className="nav-item active"><Link className="nav-link" to="/science">Science</Link></li>
             <li className="nav-item active"><Link className="nav-link" to="/sports">Sports</Link></li>
             <li className="nav-item active"><Link className="nav-link" to="/health">Health</Link></li>
             </ul>
