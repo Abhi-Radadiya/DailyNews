@@ -56,10 +56,10 @@ export class News extends Component {
   render() {
     return (
       <>
-          <InfiniteScroll
-            dataLength={this.state.articles.length}
-            next={this.fetchMoreData}
-            hasMore={this.state.articles.length !== this.state.totalResults}
+            <InfiniteScroll
+              dataLength={this.state.articles.length}
+              next={this.fetchMoreData}
+              hasMore={this.state.articles.length !== this.state.totalResults}
             loader={
               this.state.articles.length === this.state.totalResults ? (
                 <Spinner />
